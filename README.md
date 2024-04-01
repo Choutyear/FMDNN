@@ -9,7 +9,7 @@ As shown in the figure below, FMDNN consists of three modules, **Multi-granular 
 
 
 ## 2. Environment Setup
-
+[environment.yaml](https://github.com/Choutyear/FMDNN/blob/main/Files/encironment.yaml)
 ## 3. Code
 
 ## 4. Dataset
