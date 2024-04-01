@@ -22,4 +22,4 @@ Some of the codes are borrowed from:
 * [ViT_1](https://github.com/huggingface/pytorch-image-models/blob/main/timm/models/vision_transformer.py)
 * [ViT_2](https://github.com/WZMIAOMIAO/deep-learning-for-image-processing/tree/master/pytorch_classification/vision_transformer)
 * [CrossViT](https://github.com/IBM/CrossViT)
-* [Pre-trained weights]()
+* [Pre-trained weights](https://github.com/google-research/vision_transformer)
