@@ -57,7 +57,6 @@ In training, we will use pre-trained weights, which you can import through the f
                                    transforms.CenterCrop(224),
                                    transforms.ToTensor(),
                                    transforms.Normalize([0.5, 0.5, 0.5], [0.5, 0.5, 0.5])])}
-
 ```
 
 <br>
@@ -70,7 +69,6 @@ In training, we will use pre-trained weights, which you can import through the f
     val_dataset = MyDataSet(images_path=val_images_path,
                             images_class=val_images_label,
                             transform=data_transform["val"])
-
 ```
 
 <br>
@@ -92,7 +90,6 @@ In training, we will use pre-trained weights, which you can import through the f
         for k in del_keys:
             del weights_dict[k]
         print(model.load_state_dict(weights_dict, strict=False))
-
 ```
 
 <br>
@@ -139,7 +136,25 @@ In training, we will use pre-trained weights, which you can import through the f
         tb_writer.add_scalar(tags[4], optimizer.param_groups[0]["lr"], epoch)
 
         torch.save(model.state_dict(), "./weights/model-{}.pth".format(epoch))
+```
 
+```
+if __name__ == '__main__':
+    parser = argparse.ArgumentParser()
+    parser.add_argument('--num_classes', type=int, default= )
+    parser.add_argument('--epochs', type=int, default= )
+    parser.add_argument('--batch-size', type=int, default= )  #
+    parser.add_argument('--lr', type=float, default= )  #
+    parser.add_argument('--lrf', type=float, default= )  #
+    parser.add_argument('--data-path', type=str, default="  ")
+    parser.add_argument('--weights', type=str, default='  ',
+                        help='initial weights path')
+    parser.add_argument('--freeze-layers', type=bool, default=True)
+    parser.add_argument('--device', default='cuda:0', help='device id (i.e. 0 or 0,1 or cpu)')
+
+    opt = parser.parse_args()
+
+    main(opt)
 ```
 
 <br>
