@@ -16,6 +16,13 @@ To install requirements:
 
 [environment.yaml](https://github.com/Choutyear/FMDNN/blob/main/Files/encironment.yaml)
 
+
+In training, we will use pre-trained weights, which you can import through the following code.
+
+```from model import vit_base_patch16_224_in21k as create_model```
+
+[Pre-trained weights](https://github.com/google-research/vision_transformer)
+
 ## 3. Datasets
 
 * The Lung and Colon Cancer Histopathological Images [LC](https://www.kaggle.com/datasets/andrewmvd/lung-and-colon-cancer-histopathological-images)
@@ -28,10 +35,12 @@ To install requirements:
 
 ## 4. Training
 
+
+
 ## Reference
 
 Some of the codes are borrowed from:
 * [ViT_1](https://github.com/huggingface/pytorch-image-models/blob/main/timm/models/vision_transformer.py)
 * [ViT_2](https://github.com/WZMIAOMIAO/deep-learning-for-image-processing/tree/master/pytorch_classification/vision_transformer)
 * [CrossViT](https://github.com/IBM/CrossViT)
-* [Pre-trained weights](https://github.com/google-research/vision_transformer)
+
