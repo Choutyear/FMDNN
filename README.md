@@ -11,15 +11,20 @@ As shown in the figure below, FMDNN consists of three modules, **Multi-granular 
 ## 2. Environment Setup
 
 To install requirements:
-```pip install -r requirements.txt```
+
+```conda env create -f environment.yaml```
 
 [environment.yaml](https://github.com/Choutyear/FMDNN/blob/main/Files/encironment.yaml)
 
-## 3. Code
+## 3. Dataset
 
-## 4. Dataset
+* The Lung and Colon Cancer Histopathological Images [LC](https://www.kaggle.com/datasets/andrewmvd/lung-and-colon-cancer-histopathological-images)
+* NCT-CRC-HE-100K [NCT](https://paperswithcode.com/dataset/nct-crc-he-100k)
+* APTOS 2019 Blindness Detection [Bl](https://www.kaggle.com/competitions/aptos2019-blindness-detection/data)
+* HAM10000 [HAM](https://dataverse.harvard.edu/dataset.xhtml?persistentId=doi:10.7910/DVN/DBW86T)
+* Kvasir [Kv](https://datasets.simula.no/kvasir/)
 
-## 5. Training
+## 4. Training
 
 ## Reference
 
