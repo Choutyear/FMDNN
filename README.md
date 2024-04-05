@@ -10,13 +10,13 @@ As shown in the figure below, FMDNN consists of three modules, **Multi-granular 
 
 ## 2. Environment Setup
 
-To install requirements:
+You can install the environment with the following code:
 
 ```conda env create -f environment.yaml```
 
 [environment.yaml](https://github.com/Choutyear/FMDNN/blob/main/Files/encironment.yaml)
-
 <br>
+
 In training, we will use pre-trained weights, which you can import through the following code.
 
 ```from model import vit_base_patch16_224_in21k as create_model```
