@@ -62,7 +62,7 @@ In training, we will use pre-trained weights, which you can import through the f
 <br>
 
 2. Then instantiate the training data set and validation data set, use the custom data set class `MyDataSet`, and pass in the image path, label and data preprocessing method.
-```
+```python
     train_dataset = MyDataSet(images_path=train_images_path,
                               images_class=train_images_label,
                               transform=data_transform["train"])
@@ -74,14 +74,14 @@ In training, we will use pre-trained weights, which you can import through the f
 <br>
 
 3. Define mode
-```
+```python
     model = create_model(num_classes=args.num_classes, has_logits=False).to(device)
 ```
 
 <br>
 
 4. Load the pretrained weights and apply them to the model.
-```
+```python
     if args.weights != "":
         assert os.path.exists(args.weights), "weights file: '{}' not exist.".format(args.weights)
         weights_dict = torch.load(args.weights, map_location=device)
@@ -95,7 +95,7 @@ In training, we will use pre-trained weights, which you can import through the f
 <br>
 
 5. Define an SGD optimizer and a LambdaLR learning rate scheduler, and set the learning rate update strategy.
-```
+```python
     pg = [p for p in model.parameters() if p.requires_grad]
     optimizer = optim.SGD(pg, lr=args.lr, momentum=0.9, weight_decay=5E-5)
     lf = lambda x: ((1 + math.cos(x * math.pi / args.epochs)) / 2) * (1 - args.lrf) + args.lrf  # cosine
@@ -105,7 +105,7 @@ In training, we will use pre-trained weights, which you can import through the f
 <br>
 
 6. This code contains the training and validation loop of the model, in which the model is trained through the `train_one_epoch` function and the model is verified using the `evaluate` function. During the training loop, the learning rate is also updated, the ROC curve is plotted via the `plot_roc_curve` function, and the metrics during training are written to `TensorBoard`.
-```
+```python
     for epoch in range(args.epochs):
         # train
         train_loss, train_acc, train_recall, train_specificity, train_precision = train_one_epoch(
@@ -138,7 +138,7 @@ In training, we will use pre-trained weights, which you can import through the f
         torch.save(model.state_dict(), "./weights/model-{}.pth".format(epoch))
 ```
 
-```
+```python
 if __name__ == '__main__':
     parser = argparse.ArgumentParser()
     parser.add_argument('--num_classes', type=int, default= )
