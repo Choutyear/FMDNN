@@ -23,7 +23,8 @@ To install requirements:
 * APTOS 2019 Blindness Detection [Bl](https://www.kaggle.com/competitions/aptos2019-blindness-detection/data)
 * HAM10000 [HAM](https://dataverse.harvard.edu/dataset.xhtml?persistentId=doi:10.7910/DVN/DBW86T)
 * Kvasir [Kv](https://datasets.simula.no/kvasir/)
-/* Note: Before training starts, in all data set folders, each category of disease images needs to be placed in a subfolder.
+
+\* Note: Before training starts, in all data set folders, each category of disease images needs to be placed in a subfolder.
 
 ## 4. Training
 
