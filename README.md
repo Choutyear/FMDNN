@@ -16,7 +16,7 @@ To install requirements:
 
 [environment.yaml](https://github.com/Choutyear/FMDNN/blob/main/Files/encironment.yaml)
 
-
+<br>
 In training, we will use pre-trained weights, which you can import through the following code.
 
 ```from model import vit_base_patch16_224_in21k as create_model```
