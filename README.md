@@ -1,7 +1,7 @@
 # FMDNN
 FMDNN: A Fuzzy-guided Multi-granular Deep Neural Network for Histopathological Image Classification
 
-*Thank you very much for your interest in our work! This is the code of FMDNN.*
+**Thank you very much for your interest in our work! This is the code of FMDNN.**
 
 ## 1. Project Overview
 
