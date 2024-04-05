@@ -16,6 +16,7 @@ You can install the environment with the following code:
 ```conda env create -f environment.yaml```
 
 [environment.yaml](https://github.com/Choutyear/FMDNN/blob/main/Files/encironment.yaml)
+
 <br>
 
 In training, we will use pre-trained weights, which you can import through the following code.
@@ -24,7 +25,7 @@ In training, we will use pre-trained weights, which you can import through the f
 
 [Pre-trained weights](https://github.com/google-research/vision_transformer)
 
-<be>
+<br>
 
 ## 3. Datasets
 
@@ -36,7 +37,7 @@ In training, we will use pre-trained weights, which you can import through the f
 
 \* Note: Before training starts, in all data set folders, each category of disease images needs to be placed in a subfolder.
 
-<be>
+<br>
 
 ## 4. Training
 
@@ -59,6 +60,8 @@ In training, we will use pre-trained weights, which you can import through the f
 
 ```
 
+<br>
+
 2. Then instantiate the training data set and validation data set, use the custom data set class `MyDataSet`, and pass in the image path, label and data preprocessing method.
 ```
     train_dataset = MyDataSet(images_path=train_images_path,
@@ -70,10 +73,14 @@ In training, we will use pre-trained weights, which you can import through the f
 
 ```
 
+<br>
+
 3. Define mode
 ```
     model = create_model(num_classes=args.num_classes, has_logits=False).to(device)
 ```
+
+<br>
 
 4. Load the pretrained weights and apply them to the model.
 ```
@@ -88,6 +95,8 @@ In training, we will use pre-trained weights, which you can import through the f
 
 ```
 
+<br>
+
 5. Define an SGD optimizer and a LambdaLR learning rate scheduler, and set the learning rate update strategy.
 ```
     pg = [p for p in model.parameters() if p.requires_grad]
@@ -95,6 +104,8 @@ In training, we will use pre-trained weights, which you can import through the f
     lf = lambda x: ((1 + math.cos(x * math.pi / args.epochs)) / 2) * (1 - args.lrf) + args.lrf  # cosine
     scheduler = lr_scheduler.LambdaLR(optimizer, lr_lambda=lf)
 ```
+
+<br>
 
 6. This code contains the training and validation loop of the model, in which the model is trained through the `train_one_epoch` function and the model is verified using the `evaluate` function. During the training loop, the learning rate is also updated, the ROC curve is plotted via the `plot_roc_curve` function, and the metrics during training are written to `TensorBoard`.
 ```
