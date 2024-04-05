@@ -42,7 +42,7 @@ In training, we will use pre-trained weights, which you can import through the f
 ## 4. Training
 
 1. This code is responsible for processing data. First determine the device used (GPU or CPU), then check if the folder where the model weights are stored exists and create it if it does not exist. Then use `SummaryWriter` to create a TensorBoard visualization object. Then, call the `read_split_data` function to read the image paths and corresponding labels of the training set and verification set, and use `torchvision.transforms` to define the data preprocessing method.
-```
+```python
     device = torch.device(args.device if torch.cuda.is_available() else "cpu")
     if os.path.exists("./weights") is False:
         os.makedirs("./weights")
