@@ -3,6 +3,21 @@ FMDNN: A Fuzzy-guided Multi-granular Deep Neural Network for Histopathological I
 
 **Thank you very much for your interest in our work! This is the code of FMDNN.**
 
+## About us
+
+### Weiping Ding
+
+ **Github:** [Weiping Ding](https://weiping-ding.github.io/)
+ 
+ **Google Scholar:** [Weiping Ding](https://scholar.google.com/citations?user=PokEd2kAAAAJ&hl=en)
+
+### Tianyi Zhou
+
+ **Email:** [choutyear@outlook.com](mailto:choutyear@outlook.com)  
+ 
+ **Google Scholar:** [Tianyi Zhou](https://scholar.google.com/citations?user=jpYWr9YAAAAJ&hl=en)
+
+
 ## 1. Project Overview
 
 As shown in the figure below, FMDNN consists of three modules, **Multi-granular Feature Extraction Module** conducts feature extraction on the input image at three distinct granularities, **Universal Fuzzy Feature Module** extracts the universal fuzzy feature of the image, and **Fuzzy-guided Cross-attention Module** performs feature fusion by linear transformation and dimension alignment to get the final classification result.
@@ -161,19 +176,7 @@ if __name__ == '__main__':
 
 <br>
 
-## About us
 
-### Weiping Ding
-
- **Github:** [Weiping Ding](https://weiping-ding.github.io/)
- 
- **Google Scholar:** [Weiping Ding](https://scholar.google.com/citations?user=PokEd2kAAAAJ&hl=en)
-
-### Tianyi Zhou
-
- **Email:** [choutyear@outlook.com](mailto:choutyear@outlook.com)  
- 
- **Google Scholar:** [Tianyi Zhou](https://scholar.google.com/citations?user=jpYWr9YAAAAJ&hl=en)
 
 
 ## References
