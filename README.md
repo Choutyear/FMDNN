@@ -163,9 +163,18 @@ if __name__ == '__main__':
 
 ## 
 
-Tianyi Zhou: 
-Email: [choutyear@outlook.com](mailto:choutyear@outlook.com)
-Google Scholar: [Tianyi Zhou](https://scholar.google.com/citations?user=jpYWr9YAAAAJ&hl=en)
+### Tianyi Zhou
+
+Ph.D. Candidate in Artificial Intelligence  
+School of Artificial Intelligence and Computer Science  
+Nantong University, Nantong, China  
+
+Tianyi Zhou received his bachelor’s degree in 2022 and is currently pursuing a Ph.D. degree in artificial intelligence. His research interests include granular computing, fuzzy set theory, and deep learning.
+
+---
+
+📧 **Email:** [choutyear@outlook.com](mailto:choutyear@outlook.com)  
+🔎 **Google Scholar:** [Tianyi Zhou](https://scholar.google.com/citations?user=jpYWr9YAAAAJ&hl=en)
 
 
 ## References
