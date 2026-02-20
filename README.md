@@ -161,6 +161,13 @@ if __name__ == '__main__':
 
 <br>
 
+## 
+
+Tianyi Zhou: 
+Email: [choutyear@outlook.com](mailto:choutyear@outlook.com)
+Google Scholar: [Tianyi Zhou](https://scholar.google.com/citations?user=jpYWr9YAAAAJ&hl=en)
+
+
 ## References
 
 Some of the codes are borrowed from:
